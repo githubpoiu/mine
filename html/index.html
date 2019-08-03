@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>经典扫雷</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div id="mine" onselectstart="return false;" unselectable="on">
+            <div class="btns">
+                <button class="active">初级</button>
+                <button>中级</button>
+                <button>高级</button>
+                <button class="reset">重新开始</button>
+            </div>
+            <div class="gameBox"></div>
+            <div class="info">
+                <div class="mineNumBox">
+                    剩余地雷：<span class="mineNum">0</span>
+                </div>
+                <div class="scoreBox">
+                    本局分数：<span class="score">0</span>
+                </div>
+                <div class="timeBox">
+                    <span class="time">00:00</span>
+                </div>
+            </div>
+            <div class="gameEnd">
+                <div class="infoBox">
+                    <div class="infoCon">
+                        <div class="gameShow">
+                            <span class="gameStatus">任务完成！</span><br/>
+                            分数：<span class="gameScore">0</span>
+                            ，时长：<span class="gameTime">0秒</span>
+                        </div>
+                        <button class="nextStep">继续挑战</button>
+                        <button class="newGame">退出</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="../js/mine.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>

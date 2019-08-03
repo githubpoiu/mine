@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root,body{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+    display: inline-block;
+    padding: 30px;
+    background-color: #AFB8C9;
+    text-align: left;
+}
+#mine{
+    margin: 50px auto;
+    display: inline-block;
+    padding: 20px 30px;
+    font-size: 16px;
+    user-select:none;
+}
+.btns{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.btns button{
+    padding: 5px 15px;
+    outline: none;
+    border: 2px solid;
+    border-color: #fff #a1a1a1 #a1a1a1 #fff;
+    color: #bbb;
+    font-weight: bold;
+    text-shadow: -1px -1px #ccc,
+                 1px 1px #fff;
+    cursor: pointer;
+}
+.btns button.active,
+.btns .reset:active{
+    border-color: #a1a1a1 #fff#fff #a1a1a1;
+    color: #999;
+}
+table{
+    border-spacing: 1px;
+    background: #929196;
+    margin: 0 auto;
+    overflow: scroll;
+}
+td{
+    padding: 0;
+    min-width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    border: 2px solid;
+    border-color: #fff #a1a1a1 #a1a1a1 #fff;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.zero,
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight{
+    border-color: #d9d9d9;
+    background-color: #d9d9d9;
+}
+.one{
+    color: #0332fe;
+}
+.two{
+    color: #019f02;
+}
+.three{
+    color: #ff2600;
+}
+.four{
+    color: #93208f;
+}
+.five{
+    color: #ff7f29;
+}
+.six{
+    color: #ff3fff;
+}
+.seven{
+    color: #3fffbf;
+}
+.eight{
+    color: #22ee0f;
+}
+.info{
+    margin: 20px auto 0;
+    color: #bbb;
+    text-shadow: -1px -1px #fff,
+                  1px 1px #666;
+    display: flex;
+    justify-content: flex-end;
+}
+.mineNumBox,.scoreBox,.timeBox{
+    font-weight: bolder;
+    font-size: 18px;
+    margin-left: 15px;
+}
+.mine{
+    background: #d9d9d9 url(../image/mine.png) no-repeat center;
+    background-size: contain;
+}
+.flag{
+    background: #ccc url(../image/flag.png) no-repeat center;
+    background-size: contain;
+}
+.gameEnd{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.infoBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    padding: 10px;
+    background-color: #bbb;
+    border: 3px solid;
+    border-color: #fff #a1a1a1 #a1a1a1 #fff;
+}
+.infoBox .infoCon{
+    border: 2px solid;
+    padding: 30px;
+    border-color: #a1a1a1 #fff #fff #a1a1a1;
+}
+.infoBox .gameShow{
+    width: 330px;
+    color: #ccc;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: -1px -1px #fff,
+                  1px 1px #666;
+    justify-content: flex-end;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.infoBox button{
+    padding: 5px 15px;
+    margin-right: 10px;
+    outline: none;
+    border: 2px solid;
+    border-color: #fff #a1a1a1 #a1a1a1 #fff;
+    color: #999;
+    text-shadow: 1px 1px #ccc,
+                 1px 1px #fff;
+    background-color: #bbb;
+    font-weight: bold;
+    cursor: pointer;
+}
+.infoBox button:active{
+    border-color: #a1a1a1 #fff#fff #a1a1a1;
+    color: #777;
+}
